@@ -17,6 +17,7 @@ jobs:
       - run:
           name: chmod permissions
           command: chmod +x ./gradlew
+      - run:
           command: ./gradlew check
       - store_test_results:
           path: build/test-results
