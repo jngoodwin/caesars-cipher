@@ -15,9 +15,4 @@ public class CaesarCipherTest {
         assertEquals("", caesarsCipher.cipher("", 12));
     }
 
-    // This test will cause failure in circleci
-    @Test
-    void testCipheredMessageWithOffsetOf11() {
-        assertEquals("tai mdq kag pauzs fapmk", caesarsCipher.cipher("how are you doing today", 11));
-    }
 }
